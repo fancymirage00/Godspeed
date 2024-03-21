@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.flight-details::before {
+  content: "      ";
+  position: absolute;
+  left: 140px;
+  right: 140px;
+  top: 57%;
+  height: 1px;
+  background: linear-gradient(to right, transparent 50%, #e1d9d9 50%);
+  background-size: 50px 100%;
+}
