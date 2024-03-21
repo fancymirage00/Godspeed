@@ -4,7 +4,7 @@ import Gspeed from './assets/gspeed.png';
 
 function Header() {
   return (
-    <div className="mt-3 flex justify-between shadow-lg p-6 rounded-lg">
+    <div className="mt-1 flex justify-between p-2 px-5 pt-3 rounded-lg shadow-md">
       <div>
         <img src={Gspeed}></img>
       </div>

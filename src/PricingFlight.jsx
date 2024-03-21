@@ -1,4 +1,5 @@
 import { Flex, Badge } from '@radix-ui/themes';
+import { NavLink } from 'react-router-dom';
 
 function PricingFlight() {
     return (
@@ -31,12 +32,18 @@ function PricingFlight() {
                                 <span className="text-sm font-medium text-gray-700">/flight</span>
                             </p>
 
-                            <a
-                                className="mt-4 block rounded border border-orange-500 bg-orange-500 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-orange-500 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
-                                href="#"
-                            >
-                                Choose
-                            </a>
+                            <NavLink to="/passdetails">
+
+                                <a
+                                    className="mt-4 block rounded border border-orange-500 bg-orange-500 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-orange-500 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+                                    href="#"
+                                >
+                                    Choose
+                                </a>
+
+                            </NavLink>
+
+
                         </div>
 
                         <div className="p-6 sm:px-8">
@@ -159,12 +166,17 @@ function PricingFlight() {
                                 <span className="text-sm font-medium text-gray-700">/flight</span>
                             </p>
 
-                            <a
-                                className="mt-4 block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
-                                href="#"
-                            >
-                                Choose
-                            </a>
+                            <NavLink to="/passdetails">
+                                <a
+                                    className="mt-4 block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+                                    href="#"
+                                >
+                                    Choose
+                                </a>
+
+                            </NavLink>
+
+
                         </div>
 
                         <div className="p-6 sm:px-8">
@@ -287,12 +299,17 @@ function PricingFlight() {
                                 <span className="text-sm font-medium text-gray-700">/flight</span>
                             </p>
 
-                            <a
-                                className="mt-4 block rounded border border-yellow-500 bg-yellow-500 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-yellow-500 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
-                                href="#"
-                            >
-                                Choose
-                            </a>
+                            <NavLink to="/passdetails">
+                                <a
+                                    className="mt-4 block rounded border border-yellow-500 bg-yellow-500 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-yellow-500 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+                                    href="#"
+                                >
+                                    Choose
+                                </a>
+
+                            </NavLink>
+
+ 
                         </div>
 
                         <div className="p-6 sm:px-8">

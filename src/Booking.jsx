@@ -1,5 +1,5 @@
 import { CalendarIcon } from '@heroicons/react/24/solid'
-import { useState } from 'react'    // Import the useState hook from React
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 
@@ -50,7 +50,7 @@ export default function Booking() {
     };
 
     return (
-        <div className="p-10">
+        <div className="p-6 py-3">
             <form onSubmit={handleBooking}>
                 <div className="space-y-12 p-8">
                     <div className="border-b border-gray-900/10 pb-12">
