@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import PricingFlight from './PricingFlight';
-import { Badge } from '@radix-ui/themes';
+import { Badge, Button , Flex} from '@radix-ui/themes';
 import FlightAlert from './FlightAlert';
 import { Dialog } from '@radix-ui/themes';
 
-// This is a simple flight card component
+// Flight card component
 const FlightCard = ({ data, times }) => {
     const departureDate = new Date(data.departureDate);
     const formattedDate = `${departureDate.getDate()} ${departureDate.toLocaleString('default', { month: 'short' })} ${departureDate.getFullYear()}`;
@@ -33,7 +33,17 @@ const FlightCard = ({ data, times }) => {
                     <Dialog.Content>
                         <FlightAlert />
                         <Dialog.Close>
-                            <button>Close</button>
+                            <div className="">
+                                <Flex gap="3" justify="end">
+                                    <Dialog.Close>
+                                        <Button variant="outline" color="amber">
+                                            Close
+                                        </Button>
+                                    </Dialog.Close>
+                                </Flex>
+
+                            </div>
+
                         </Dialog.Close>
                     </Dialog.Content>
 
@@ -51,9 +61,9 @@ const FlightCard = ({ data, times }) => {
                     <p className="text-gray-400 text-sm font-medium">({data.leavingFrom})</p>
                 </div>
 
-                
 
-                
+
+
 
                 <div className="flex justify-center items-center mt-9">
                     <Badge color="red" size="1">{data.flightDuration} Hours</Badge>
@@ -82,8 +92,8 @@ const FlightPage = () => {
 
     return (
         <div className="flight-page bg-gray-100 min-h-screen p-5">
-            
-            <FlightCard data ={data} times={times}/>
+
+            <FlightCard data={data} times={times} />
             <PricingFlight></PricingFlight>
         </div>
     );
